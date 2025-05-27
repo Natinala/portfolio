@@ -1,0 +1,173 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+*{
+    font-family: "Roboto Condensed", serif;
+  }
+  
+  /* HEADER */
+  
+  .logo{
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+
+}
+
+li {margin-right: 10px;
+    justify-self: center;}
+  
+  a  {
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-size:large;
+  }
+  
+  a:hover {
+      color:darkseagreen;
+  }
+  
+  
+  /* MAIN */
+  
+  .main-img{
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display:block;
+      border-radius: 30px;
+  }
+
+  body {
+    background: linear-gradient(-45deg,#f2becf, #ee7752,#cdd783,#2a5c41);
+    background-size: 400% 400%;
+    animation: gradient 20s;
+    /*background-color:#2a5c41; */
+    color:white;
+}
+
+
+.skills ul {
+    display: block;
+
+}
+
+.skills li {
+    margin-bottom: 5px;
+    margin-right: auto;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 2rem;
+}
+
+/*Animation: Button*/
+
+button {
+    background-color: darkseagreen;
+    color:#ffb84d;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: 100px;
+}
+
+button:hover {
+    animation: pulse 0.6s infinite alternate ease-in-out;
+    box-shadow: 0 0 5px rgba(244,184,77,0.8);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(244,184,77,0.8);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px rgba(244,184,77,0.8);
+    }
+}
+
+
+/*Animation: Ball */
+
+
+.bouncing-circle {
+    background-color:white;
+    margin-top: 50px;
+    height: 2vw; 
+    width: 2vw;  
+    border-radius: 50%; 
+    animation-name: bounce;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(96vw); 
+    }
+    100% {
+        transform: translateX(0px); 
+    }
+}
+
+
+/*Animation: Background */
+
+@keyframes gradient{
+
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+  /* FOOTER */
+  
+  footer{
+      margin-top: 4rem;
+      border-top: 1px solid black;
+  }
+
+
+
+  /*
+  RESOURCES
+
+  Gradient background
+  https://www.sliderrevolution.com/resources/css-animated-background/
+  */
