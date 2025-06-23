@@ -42,13 +42,21 @@ li {margin-right: 10px;
   
   
   /* MAIN */
-  
+
   .main-img{
       width: 100%;
       max-width: 400px;
       height: auto;
       display:block;
       border-radius: 30px;
+  }
+
+    .avatar{
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display:block;
+      border-radius: 200px;
   }
 
   body {
